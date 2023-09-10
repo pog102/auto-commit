@@ -1,6 +1,9 @@
 #!/bin/sh
-x=$(shuf -i 0-7 -n 1)
+x=$(shuf -i 0-8 -n 1)
 pro="$HOME/auto-commit"
+if [ $x = 0]; then
+	exit
+fi
 for i in $(seq 1 $x);
 do
 ts=$(date +%s)
