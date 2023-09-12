@@ -1,5 +1,5 @@
 #!/bin/sh
-x=$(shuf -i 0-8 -n 1)
+x=$(shuf -i 1-8 -n 1)
 pro="$HOME/auto-commit"
 if [ $x = 0 ]; then
 	exit
