@@ -1,8 +1,8 @@
 #!/bin/sh
-x=$(shuf -i 1-27 -n 1)
+x=$(($(shuf -i 0-5 -n 1)*10))
 pro="$HOME/auto-commit"
 if [ $x = 0 ]; then
-	exit
+	x=3
 fi
 for i in $(seq 1 $x);
 do
